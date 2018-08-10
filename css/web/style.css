@@ -1,0 +1,714 @@
+@font-face{
+
+	font-family: 'amble';
+    src:url(../../fonts/Amble-Regular-webfont.ttf) format('truetype');
+}
+
+@font-face{
+
+	font-family: 'armata';
+    src:url(../../fonts/Armata-Regular.ttf) format('truetype');
+}
+@font-face{
+
+	font-family: 'dos';
+    src:url(../../fonts/Federo-Regular.ttf) format('truetype');
+}
+@font-face{
+
+	font-family: 'antic';
+    src:url(../../fonts/Antic-Regular.ttf) format('truetype');
+}
+@font-face{
+
+	font-family: 'fira';
+    src:url(../../fonts/Antic-Regular.ttf) format('truetype');
+}
+@font-face{
+
+	font-family: 'brawl';
+    src:url(../../fonts/Brawler-Regular.ttf) format('truetype');
+}
+@font-face{
+
+	font-family: 'amita';
+    src:url(../../fonts/Amita-Regular.ttf) format('truetype');
+}
+
+
+html, body {
+	height: 100%;
+}
+
+html { -webkit-text-size-adjust: none;}
+.video embed,.video object,.video iframe { width: 100%;  height: auto;}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: snow;
+	font-family: amble;
+	font-size: 10pt;
+	font-weight: 300;
+	color: #363636;
+}
+
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 190%;
+}
+
+strong {
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+p a{
+	color:#A80154;
+}
+
+a img {
+	border: none;
+}
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
+
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+		.image-centered img
+		{
+			margin: 0 auto;
+			width: auto;
+		}
+
+hr {
+	/*display: none;*/
+}
+
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.style1 li
+	{
+		border-top: solid 1px #E5E5E5;
+		padding: 0px 0px 0px 0px;
+	}
+	
+	ul.style1 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	ul.style2
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+	}
+	
+	ul.style2 li
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background: white;
+		border-bottom: 1px solid #E5E5E5;
+	}
+
+	ul.style2 li:first-child
+	{
+		border-top: 0;
+		padding-top: 0;
+	}
+
+	
+	.style2 a li:hover{
+
+		background: rgba(219, 255, 201, 0.93);
+		color: green;
+
+	}
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 1.5em 0em 2.5em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.30em;
+		font-size: 1em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #3f3f3f;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	ul.contact li a.icon-facebook:before { background: #39599F; }
+	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+	ul.contact li a.icon-tumblr:before { background: #31516A; }
+	ul.contact li a.icon-rss:before { background: #F2600B; }
+
+
+/*********************************************************************************/
+/* Heading Titles ,News , THread, Comments                                                               */
+/*********************************************************************************/
+	.comment{
+		padding: 6px;
+		margin: 3px;
+		border-left: 7px solid rgba(0, 189, 0, 0.83);
+		height: auto;
+	}
+	.comment span.msg{
+		
+		padding: 8px;
+		margin: 3px;
+		font-family: 'brawl';
+		color: black;
+		font-size: 12px;
+		letter-spacing: 1px;
+		word-spacing: 1px;
+	}
+	.comment .head{
+		font-size: 13px;
+		font-family: 'amble';
+		color: green;
+		padding: 3px;
+		margin-bottom: 3px;
+		padding-bottom: 2px; 	
+	}
+
+	blockquote{
+		font-style: italic;
+		text-transform: lowercase;
+		border-left: 2px solid lightgrey;
+		font-family: 'amita';
+		margin-left: 4%;
+	}
+
+	.title
+	{
+		margin-bottom: 2em;
+		text-transform: uppercase;
+				
+	}
+
+
+	.title h2
+	{
+		font-weight: 200;
+		font-size: 1.5em;
+		background: rgb(0, 128, 0);
+		color:white;
+		padding: 4px;
+		font-family: 'antic';
+
+	}
+	
+	.title .byline
+	{
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #6F6F6F;
+	}
+
+/** WRAPPER */
+
+#wrapper {
+	background: #FFFFFF url(../images/bg01.png) repeat;
+	margin-top: 0px;
+}
+
+#footer-wrapper
+{
+	background: #0F0F0F;
+}
+
+	.container {
+		width: 98%;
+		margin: 0px auto;
+	}
+
+
+.clearfix {
+	clear: both;
+}
+
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+#kl{
+
+
+}
+
+#header-wrapper
+{
+
+	overflow: hidden;
+	background-size: 100%;
+	padding: 1em 0em 1em 0em;
+	background: transparent;
+	position: relative;
+}
+
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header 
+	{
+		position: fixed;
+		overflow: hidden;
+		text-align: center;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo 
+	{
+	width: 500px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 2em 0em;
+	text-transform: uppercase;
+	margin-top: 0px;
+	}
+	
+	#logo h1
+	{
+		letter-spacing: 0.10em;
+		font-size: 2em;
+	}
+	
+	#logo p 
+	{
+		letter-spacing: 0.10em;
+		color: #FFF;
+	}
+	
+	#logo a 
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner 
+	{
+		overflow: hidden;
+		height: 330px;
+		background: transparent;
+		background-size: cover;
+	}
+	
+	#banner .image
+	{
+	}
+	
+
+/** MENU #A80154  #B10058 */
+
+#menu-wrapper
+{	
+	background:rgba(214, 0, 0, 0.97) ;
+}
+
+#menu {
+	position: static;
+	overflow: hidden;
+	height: 40px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline-block;
+	text-align: left;
+}
+
+#menu a {
+	display: block;
+	letter-spacing: 1px;
+	padding-top: 5px;
+	margin-top: 5px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	line-height: 40px;
+	border: none;
+	color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#menu .current_page_item a{
+
+	text-decoration: none;
+	color: white;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	background: white;
+	color:#B10058;
+}
+
+#menu .current_page_item a {
+	background: #C0005F;
+}
+
+/** PAGE */
+
+#page
+{
+	position: relative;
+	overflow: hidden;
+	padding: 6em 0em 5em 0em;
+}
+
+/** CONTENT */
+
+#content
+{
+	float: right;
+	width: 790px;
+	text-align: justify;
+}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: left;
+		width: 345px;
+		text-align: justify;
+	}
+	
+	#sidebar .title h2
+	{
+		font-size: 1.6em;
+	}
+	
+	#sidebar .box1
+	{
+		margin-bottom: 3em;
+		margin-left: 3%;
+	}
+
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		text-align: center;
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 0.20em;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 0.80em;
+		color: rgba(255,255,255,.5);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,.7);
+	}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-bottom: 1px solid #E5E5E5;
+		text-align: center;
+	}
+	
+	#welcome h2
+	{
+		letter-spacing: 0.20em;
+		text-transform: uppercase;
+		font-size: 2.6em;
+	}
+	
+	#welcome p
+	{
+		font-size: 1.3em;
+	}
+
+	#welcome .byline
+	{
+		display: block;
+		padding: 0em 0em 1.5em 0em;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #6F6F6F;
+	}
+
+
+	#download_header{
+		background: url(../../images/content/albumheader.png) no-repeat;
+		width: 94%;
+		margin: 2% 3% 3% 2%;
+		text-align: left;
+		padding: 1px;
+		height: 1.5%;
+		padding-left: 5px;
+	}
+	#download_header cc{
+
+		font-size: 15px;
+		font-family: "amita";
+		color: white;
+	}
+
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio-wrapper
+	{
+		background: rgba(0,0,0,.04);
+		padding: 6em 0em;
+		color: rgba(255,255,255,.7);
+	}
+	
+	#portfolio
+	{
+		overflow: hidden;
+	}
+	
+	#portfolio .title h2
+	{
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	#portfolio .byline
+	{
+		font-size: 1em;
+		color: #EEA7C1;
+	}
+	
+	#column1,
+	#column2,
+	#column3,
+	#column4
+	{
+		width: 282px;
+	}
+	
+	#column1,
+	#column2
+	{
+		float: left;
+		margin-right: 24px;
+	}
+	
+	#column3
+	{
+		float: left;
+	}
+	
+	#column4
+	{
+		float: right;
+	}
+	
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 1.5em;
+		padding: 0.50em 3em 0.50em 2em;
+		background: rgb(61, 61, 61);
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+	
+		.button:before
+		{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 20px;
+			text-align: center;
+			color: #FFF;
+		}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+	
+	#footer-wrapper
+	{
+		overflow: hidden;
+		padding: 2.5em 0em;
+		background: #1E1B1A;
+	}
+
+	#footer
+	{
+		color: #ADADAD;
+	}
+	
+	#footer .title h2
+	{
+		font-weight: 400;
+		font-size: 1.2em;
+		color: #FFF;
+	}
+
+	#footer .title
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 li
+	{
+		border-color: #2D2926 !important;
+	}
+	
+	#footer .style1 a
+	{
+		font-size:1em;
+		color: #B1B1B1;
+	}
+	
+	#box1
+	{
+		float: left;
+		width: 354px;
+		margin-right: 24px;
+		padding-right: 30px;
+	}
+	
+	#box2
+	{
+		float: left;
+		width: 354px;
+		margin-left: 24px;
+		padding-right: 30px;
+	}
+	
+	#box3
+	{
+		float: right;
+		width: 344px;
+		padding-left: 40px;
+	}
+
